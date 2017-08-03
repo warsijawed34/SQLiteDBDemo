@@ -19,7 +19,8 @@ public class DBAdapterClass {
     public DBAdapterClass(Context mContext){
        dbOpenHelperClass=new DBOpenHelperClass(mContext);
     }
-    //insert single data
+    //insert single data into row
+
     public long insertData(String name, String phone, String address, String email,  String password){
         SQLiteDatabase sqLiteDatabase=dbOpenHelperClass.getWritableDatabase();
         ContentValues contentValues=new ContentValues();

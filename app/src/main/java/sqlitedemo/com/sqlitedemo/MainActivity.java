@@ -11,7 +11,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     DBAdapterClass dbAdapterClass;
     private EditText etName, etPass, etEnterUser;
     private Button btnLogin, btnAllDetails, btnGetSomeDetails, btnUpdate, btnDelete;
-    private Context mContext;
+    private Context mContext, hello;
+    private  Button btnLogin1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnGetSomeDetails.setOnClickListener(this);
         btnUpdate.setOnClickListener(this);
         btnDelete.setOnClickListener(this);
+
+
+
 
         dbAdapterClass=new DBAdapterClass(this);
     }
